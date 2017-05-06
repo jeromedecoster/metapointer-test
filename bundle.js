@@ -16,13 +16,13 @@ PointerFun.prototype = new Unipointer()
 // overwrite public pointer methods
 PointerFun.prototype.pointerDown = function( event, pointer ) {
 // console.log('pointer down', event, pointer, this.log);
-  this.append('pointerDown')
+  this.append('pointerDown ' +  this.pointerIdentifier)
   // this.log.value = timestamp() + ' pointerDown\n' + this.log.value
   this._bindPostStartEvents( event )
 }
 
 PointerFun.prototype.pointerMove = function( event, pointer ) {
-  this.append('pointerMove')
+  this.append('pointerMove ' +  this.pointerIdentifier)
   // this.log.value = timestamp() + ' pointerDown\n' + this.log.value
 // console.log('pointer move');
 };
