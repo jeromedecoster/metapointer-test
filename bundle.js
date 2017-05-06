@@ -47,7 +47,8 @@ PointerFun.prototype.append = function( text ) {
   this.log.value = timestamp() + ' ' + text + '\n' + this.log.value
 }
 
-new PointerFun(document.querySelector('.rect'))
+new PointerFun(document.querySelector('.rect1'))
+new PointerFun(document.querySelector('.rect2'))
 
 },{"time-funcs/timestamp":5,"unipointer":6}],2:[function(require,module,exports){
 /**

@@ -4,13 +4,21 @@
   <meta charset="utf-8">
   <title>metapointer</title>
     <style>
-      .rect {
+      .rect1 {
         position: absolute;
         top: 50px;
         left: 0px;
-        width: 100px;
-        height: 100px;
-        background-color: #f0f;
+        width: 150px;
+        height: 150px;
+        background-color: #f00;
+      }
+      .rect2 {
+        position: absolute;
+        top: 250px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        background-color: #00f;
       }
       .log {
         font-family: monospace;
@@ -24,7 +32,8 @@
     </style>
 </head>
 <body>
-  <div class="rect"></div>
+  <div class="rect1"></div>
+  <div class="rect2"></div>
   <textarea class="log"></textarea>
   <script src="bundle.js"></script>
 </body>
